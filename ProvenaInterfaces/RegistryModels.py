@@ -12,7 +12,7 @@ except:
     from .helpers.helpers import duplicates
 
 # Type alias to denote that a string references an ID
-type IdentifiedResource = str
+IdentifiedResource = str
 
 
 class ItemCategory(str, Enum):

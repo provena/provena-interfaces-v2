@@ -4,7 +4,7 @@ from typing import List, Optional, Dict, Any
 from enum import Enum
 
 # Base type alias for identified resources
-type IdentifiedResource = str
+IdentifiedResource = str
 
 # Each of the various resource types which are associated with an ID
 ModellerResource = IdentifiedResource
