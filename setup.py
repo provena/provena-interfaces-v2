@@ -1,7 +1,6 @@
 from setuptools import setup, find_packages  # type: ignore
 import os
 from package_readme import long_description
-import re
 
 # 0.1.0 is the 'version' installs from this directory from other components in repo will use
 version = os.getenv('TAG_NAME', 'v0.1.0')
@@ -21,7 +20,7 @@ setup(
         ]
     ),
     install_requires=[
-        'fastapi',
+        'fastapi>=0.116.1',
         'pydantic>=2.0',
         'email-validator',
         'isodate',
