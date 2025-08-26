@@ -64,8 +64,10 @@ jobs:
           repository-url: https://test.pypi.org/legacy/
           attestations: false
           verbose: true
-          skip-existing: true
+          skip-existing: false
       - name: Publish package distributions to PROD PyPI
         uses: pypa/gh-action-pypi-publish@release/v1
         with:
           attestations: false
+          verbose: true
+          skip-existing: false
