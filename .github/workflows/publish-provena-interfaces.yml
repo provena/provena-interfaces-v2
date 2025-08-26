@@ -45,7 +45,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: dist-artifact
-          path: utilities/packages/python/provena-interfaces-v2/dist
+          path: dist
 
   pypi-publish:
     needs: test-and-build
