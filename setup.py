@@ -7,7 +7,7 @@ import re
 version = os.getenv('TAG_NAME', 'v0.1.0')
 
 setup(
-    name='provena_interfaces',
+    name='provena_interfaces_v2',
     # format acceptably as 'v0.0.1' or '0.0.1',
     version=version,
     description='Interfaces for Provena Application (see https://provena.io)',
