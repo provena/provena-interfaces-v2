@@ -20,7 +20,7 @@ setup(
         ]
     ),
     install_requires=[
-        'fastapi>=0.116.1',
+        'fastapi==0.116.1',
         'pydantic>=2.0',
         'email-validator',
         'isodate',
