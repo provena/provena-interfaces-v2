@@ -5,7 +5,7 @@ on:
   workflow_dispatch:
     inputs:
       tag_name:
-        description: 'Tag name (e.g., v1.2.3)'
+        description: "Tag name (e.g., v1.2.3)"
         required: true
         type: string
 jobs:
@@ -64,9 +64,6 @@ jobs:
           repository-url: https://test.pypi.org/legacy/
           attestations: false
           verbose: true
-      - name: TEST install package from TEST PyPI
-        run: |
-          pip install --index-url https://test.pypi.org/simple/ --extra-index-url https://pypi.org/simple/ provena-interfaces-v2
       - name: Publish package distributions to PROD PyPI
         uses: pypa/gh-action-pypi-publish@release/v1
         with:
